@@ -1,0 +1,50 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="660" viewBox="0 0 1200 660" role="img" aria-labelledby="title desc">
+  <title id="title">Layered checks for train-serving parity</title>
+  <desc id="desc">Five ascending validation layers: agree on feature meaning, test transformations, validate schema and contract, run end-to-end inference tests, and monitor after release. Each layer checks a different boundary.</desc>
+  <defs>
+    <style>
+      text { font-family: Inter, "Segoe UI", Arial, sans-serif; fill: #e8eef8; }
+      .title { font-size: 30px; font-weight: 700; }
+      .label { font-size: 18px; font-weight: 700; }
+      .detail { font-size: 14px; fill: #c0cbda; }
+      .muted { font-size: 15px; fill: #9eacc2; }
+      .card { fill: #0b1a2c; stroke: #1c3855; stroke-width: 2; }
+      .num { font-size: 18px; font-weight: 700; }
+    </style>
+  </defs>
+  <rect width="1200" height="660" rx="26" fill="#030b18"/>
+  <text x="54" y="66" class="title">Test more than the model</text>
+  <text x="55" y="98" class="muted">Layer checks across the path from a feature definition to deployed behavior.</text>
+
+  <rect x="55" y="135" width="1090" height="76" rx="15" class="card"/>
+  <circle cx="96" cy="173" r="22" fill="#102d3a" stroke="#18d6ce" stroke-width="2"/>
+  <text x="96" y="179" text-anchor="middle" class="num">1</text>
+  <text x="137" y="167" class="label">Feature definition</text>
+  <text x="137" y="191" class="detail">Agree on meaning, source fields, units, time reference, and missing-value rules.</text>
+
+  <rect x="105" y="229" width="1040" height="76" rx="15" class="card"/>
+  <circle cx="146" cy="267" r="22" fill="#102d3a" stroke="#18d6ce" stroke-width="2"/>
+  <text x="146" y="273" text-anchor="middle" class="num">2</text>
+  <text x="187" y="261" class="label">Transformation tests</text>
+  <text x="187" y="285" class="detail">Check expected outputs for representative values and relevant edge cases.</text>
+
+  <rect x="155" y="323" width="990" height="76" rx="15" class="card"/>
+  <circle cx="196" cy="361" r="22" fill="#382616" stroke="#ff9f1c" stroke-width="2"/>
+  <text x="196" y="367" text-anchor="middle" class="num">3</text>
+  <text x="237" y="355" class="label">Schema and contract tests</text>
+  <text x="237" y="379" class="detail">Validate field names, types, required inputs, and request/response expectations.</text>
+
+  <rect x="205" y="417" width="940" height="76" rx="15" class="card"/>
+  <circle cx="246" cy="455" r="22" fill="#382616" stroke="#ff9f1c" stroke-width="2"/>
+  <text x="246" y="461" text-anchor="middle" class="num">4</text>
+  <text x="287" y="449" class="label">End-to-end inference tests</text>
+  <text x="287" y="473" class="detail">Exercise representative inputs through feature preparation and model serving.</text>
+
+  <rect x="255" y="511" width="890" height="76" rx="15" class="card"/>
+  <circle cx="296" cy="549" r="22" fill="#382616" stroke="#ff9f1c" stroke-width="2"/>
+  <text x="296" y="555" text-anchor="middle" class="num">5</text>
+  <text x="337" y="543" class="label">Post-release monitoring</text>
+  <text x="337" y="567" class="detail">Observe inputs and outputs; assess outcomes when suitable labels are available.</text>
+
+  <text x="55" y="625" class="muted">Choose coverage and numerical tolerances to suit the application; there is no universal threshold.</text>
+</svg>

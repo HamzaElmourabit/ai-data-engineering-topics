@@ -1,0 +1,50 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="660" viewBox="0 0 1200 660" role="img" aria-labelledby="title desc">
+  <title id="title">Monitor, investigate, and verify</title>
+  <desc id="desc">A continuous loop: observe serving inputs and predictions, check input and feature health, evaluate outcomes when suitable labels arrive, investigate signals, make a reviewed change if warranted, and verify after release. A note explains that shifts alone do not prove model performance changed.</desc>
+  <defs>
+    <style>
+      text { font-family: Inter, "Segoe UI", Arial, sans-serif; fill: #e8eef8; }
+      .title { font-size: 30px; font-weight: 700; }
+      .label { font-size: 17px; font-weight: 700; }
+      .detail { font-size: 14px; fill: #b7c3d5; }
+      .muted { font-size: 15px; fill: #9eacc2; }
+      .card { fill: #0b1a2c; stroke: #1c3855; stroke-width: 2; }
+      .arrow { stroke: #18d6ce; stroke-width: 3; fill: none; }
+    </style>
+    <marker id="arrow" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="8" markerHeight="8" orient="auto">
+      <path d="M 0 0 L 10 5 L 0 10 z" fill="#18d6ce"/>
+    </marker>
+  </defs>
+  <rect width="1200" height="660" rx="26" fill="#030b18"/>
+  <text x="54" y="66" class="title">Monitoring is a feedback loop</text>
+  <text x="55" y="98" class="muted">Signals guide investigation; interpretation depends on context and evidence.</text>
+
+  <rect x="425" y="133" width="350" height="90" rx="16" class="card"/>
+  <text x="600" y="169" text-anchor="middle" class="label">1 · Observe serving</text>
+  <text x="600" y="197" text-anchor="middle" class="detail">Inputs, features, predictions, and operations</text>
+
+  <rect x="790" y="278" width="350" height="90" rx="16" class="card"/>
+  <text x="965" y="314" text-anchor="middle" class="label">2 · Check signal health</text>
+  <text x="965" y="342" text-anchor="middle" class="detail">Schema, missingness, freshness, and shifts</text>
+
+  <rect x="640" y="454" width="350" height="90" rx="16" class="card"/>
+  <text x="815" y="490" text-anchor="middle" class="label">3 · Evaluate outcomes</text>
+  <text x="815" y="518" text-anchor="middle" class="detail">When appropriate labels become available</text>
+
+  <rect x="210" y="454" width="350" height="90" rx="16" class="card"/>
+  <text x="385" y="490" text-anchor="middle" class="label">4 · Investigate and decide</text>
+  <text x="385" y="518" text-anchor="middle" class="detail">Check versions, inputs, and likely causes</text>
+
+  <rect x="60" y="278" width="350" height="90" rx="16" class="card"/>
+  <text x="235" y="314" text-anchor="middle" class="label">5 · Verify any change</text>
+  <text x="235" y="342" text-anchor="middle" class="detail">Review, test, release, and observe</text>
+
+  <path d="M 775 188 C 850 204 908 230 940 270" class="arrow" marker-end="url(#arrow)"/>
+  <path d="M 944 369 C 931 408 902 430 876 449" class="arrow" marker-end="url(#arrow)"/>
+  <path d="M 640 500 H 566" class="arrow" marker-end="url(#arrow)"/>
+  <path d="M 211 451 C 168 420 150 398 168 367" class="arrow" marker-end="url(#arrow)"/>
+  <path d="M 245 277 C 287 220 355 194 418 183" class="arrow" marker-end="url(#arrow)"/>
+
+  <rect x="62" y="572" width="1076" height="54" rx="12" fill="#20180e" stroke="#ff9f1c" stroke-width="2"/>
+  <text x="600" y="606" text-anchor="middle" class="detail">A shift in inputs or predictions is a signal to investigate—not proof that predictive performance changed.</text>
+</svg>
