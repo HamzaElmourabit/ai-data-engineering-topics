@@ -1,0 +1,53 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="610" viewBox="0 0 1200 610" role="img" aria-labelledby="title desc">
+  <title id="title">Train-serving parity checklist</title>
+  <desc id="desc">Four checks: same preprocessing, same features, realistic validation, and production monitoring.</desc>
+  <defs>
+    <style>
+      text { font-family: Inter, "Segoe UI", Arial, sans-serif; fill: #e8eef8; }
+      .title { font-size: 31px; font-weight: 700; }
+      .label { font-size: 21px; font-weight: 700; }
+      .detail { font-size: 16px; fill: #b7c3d5; }
+      .num { font-size: 22px; font-weight: 700; }
+      .card { fill: #0b1a2c; stroke: #1c3855; stroke-width: 2; }
+      .cyan-label { fill: #18d6ce; }
+      .orange-label { fill: #ff9f1c; }
+    </style>
+  </defs>
+  <rect width="1200" height="610" rx="26" fill="#030b18"/>
+  <text x="56" y="70" class="title">The train-serving parity checklist</text>
+  <text x="57" y="104" class="detail">Four practical checks from training data to deployed predictions.</text>
+
+  <rect x="56" y="148" width="528" height="165" rx="18" class="card"/>
+  <rect x="56" y="148" width="8" height="165" rx="4" fill="#18d6ce"/>
+  <circle cx="112" cy="205" r="25" fill="#102d3a" stroke="#18d6ce" stroke-width="2"/>
+  <text x="112" y="213" text-anchor="middle" class="num" fill="#18d6ce">1</text>
+  <text x="154" y="203" class="label cyan-label">SAME PREPROCESSING</text>
+  <text x="154" y="239" class="detail">Align transformations, scaling, and encoding.</text>
+  <text x="154" y="267" class="detail">Check the steps used to prepare model inputs.</text>
+
+  <rect x="616" y="148" width="528" height="165" rx="18" class="card"/>
+  <rect x="616" y="148" width="8" height="165" rx="4" fill="#ff9f1c"/>
+  <circle cx="672" cy="205" r="25" fill="#382616" stroke="#ff9f1c" stroke-width="2"/>
+  <text x="672" y="213" text-anchor="middle" class="num" fill="#ff9f1c">2</text>
+  <text x="714" y="203" class="label orange-label">SAME FEATURES</text>
+  <text x="714" y="239" class="detail">Match feature names and data types.</text>
+  <text x="714" y="267" class="detail">Handle missing values consistently.</text>
+
+  <rect x="56" y="345" width="528" height="165" rx="18" class="card"/>
+  <rect x="56" y="345" width="8" height="165" rx="4" fill="#18d6ce"/>
+  <circle cx="112" cy="402" r="25" fill="#102d3a" stroke="#18d6ce" stroke-width="2"/>
+  <text x="112" y="410" text-anchor="middle" class="num" fill="#18d6ce">3</text>
+  <text x="154" y="400" class="label cyan-label">REALISTIC VALIDATION</text>
+  <text x="154" y="436" class="detail">Use production-like inputs.</text>
+  <text x="154" y="464" class="detail">Exercise the end-to-end pipeline.</text>
+
+  <rect x="616" y="345" width="528" height="165" rx="18" class="card"/>
+  <rect x="616" y="345" width="8" height="165" rx="4" fill="#ff9f1c"/>
+  <circle cx="672" cy="402" r="25" fill="#382616" stroke="#ff9f1c" stroke-width="2"/>
+  <text x="672" y="410" text-anchor="middle" class="num" fill="#ff9f1c">4</text>
+  <text x="714" y="400" class="label orange-label">PRODUCTION MONITORING</text>
+  <text x="714" y="436" class="detail">Track input quality and predictions.</text>
+  <text x="714" y="464" class="detail">Evaluate outcomes when labels are available.</text>
+
+  <text x="56" y="565" class="detail">A model is only as reliable as the pipeline that serves it.</text>
+</svg>
