@@ -13,11 +13,11 @@ Concepts for building dependable data platforms and pipelines.
 - **ETL vs. ELT** — how extraction, transformation, and loading patterns differ.
 - **Data Lake, Data Warehouse, and Lakehouse** — storage and analytics architectures.
 - **Data Quality** — completeness, validity, consistency, freshness, and practical checks.
-- **Data Swamp** — how a data lake becomes difficult to trust and use.
+- **[Data Swamp](./topics/data-swamp/README.md)** — how unmanaged data accumulation can make a data lake difficult to discover, trust, and use.
 - **Data Governance and Data Stewardship** — ownership, definitions, metadata, and quality responsibilities.
 - **Apache Iceberg** — table formats, snapshots, schema evolution, time travel, and partitioning.
 
-*Status: topic notes will be added progressively.*
+**Available guide:** [Data Swamp — practical guide, lifecycle diagram, and health checklist](./topics/data-swamp/README.md).
 
 ### 2. Data Science & Machine Learning
 
@@ -42,11 +42,12 @@ Practical concerns that arise when models move from experiments into real system
 
 Start with the detailed guide: **[Train–Serving Mismatch: guide, checklist, and diagrams](./topics/train-serving-mismatch/README.md)**.
 
-## Featured resource
+## Featured resources
 
-[![LinkedIn carousel PDF](https://img.shields.io/badge/LinkedIn%20carousel-PDF-0A66C2?logo=adobeacrobatreader&logoColor=white)](./Train_Serving_Mismatch_Checklist_Corrected.pdf)
+- [Data Swamp guide](./topics/data-swamp/README.md) — causes, consequences, prevention practices, and a data lake health checklist.
+- [Train–Serving Mismatch carousel PDF](./Train_Serving_Mismatch_Checklist_Corrected.pdf) — a visual guide with a checklist and diagrams.
 
-The current featured resource is a visual guide to train-serving mismatch, with a checklist and diagrams. See the [topic README](./topics/train-serving-mismatch/README.md) for explanations, examples, validation layers, and monitoring considerations.
+The SVG diagrams in `assets/` are original explanatory illustrations used by the topic guides.
 
 ## Repository structure
 
@@ -55,12 +56,15 @@ The current featured resource is a visual guide to train-serving mismatch, with 
 ├── README.md
 ├── Train_Serving_Mismatch_Checklist_Corrected.pdf
 ├── assets/
+│   ├── data-swamp-lifecycle.svg
 │   ├── mismatch-points.svg
 │   ├── monitoring-loop.svg
 │   ├── parity-checklist.svg
 │   ├── train-serving-flow.svg
 │   └── validation-layers.svg
 └── topics/
+    ├── data-swamp/
+    │   └── README.md
     └── train-serving-mismatch/
         └── README.md
 ```
