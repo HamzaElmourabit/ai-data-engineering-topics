@@ -1,0 +1,59 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1440" height="620" viewBox="0 0 1440 620" role="img" aria-labelledby="title desc">
+  <title id="title">From managed data lake to data swamp</title>
+  <desc id="desc">A managed data lake with catalogued, owned, quality-checked datasets can become difficult to use when uncontrolled ingestion, missing metadata, unclear ownership, duplication, and absent quality checks accumulate.</desc>
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#0b1730"/><stop offset="1" stop-color="#10283b"/></linearGradient>
+    <linearGradient id="lake" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#0e7490"/><stop offset="1" stop-color="#164e63"/></linearGradient>
+    <linearGradient id="swamp" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#365b42"/><stop offset="1" stop-color="#263b35"/></linearGradient>
+    <marker id="arrow" markerWidth="12" markerHeight="12" refX="9" refY="6" orient="auto"><path d="M0 0 L12 6 L0 12 Z" fill="#7dd3fc"/></marker>
+    <style>
+      .heading{font:700 30px Arial,sans-serif;fill:#f8fafc}.sub{font:400 17px Arial,sans-serif;fill:#cbd5e1}
+      .label{font:700 19px Arial,sans-serif;fill:#f8fafc}.small{font:400 15px Arial,sans-serif;fill:#e2e8f0}
+      .chip{font:600 15px Arial,sans-serif;fill:#f8fafc}.muted{font:400 14px Arial,sans-serif;fill:#cbd5e1}
+    </style>
+  </defs>
+  <rect width="1440" height="620" rx="26" fill="url(#bg)"/>
+  <text x="72" y="66" class="heading">A data lake does not become a swamp overnight</text>
+  <text x="72" y="99" class="sub">The risk grows when data accumulates faster than teams can describe, validate, govern, and maintain it.</text>
+
+  <rect x="64" y="150" width="490" height="390" rx="22" fill="#102c43" stroke="#22d3ee" stroke-width="2"/>
+  <text x="96" y="193" class="label">MANAGED DATA LAKE</text>
+  <text x="96" y="220" class="small">Discoverable • documented • accountable</text>
+  <rect x="96" y="254" width="426" height="242" rx="18" fill="url(#lake)"/>
+  <path d="M96 340 Q170 310 240 340 T384 340 T522 340" fill="none" stroke="#67e8f9" stroke-width="3" opacity=".55"/>
+  <path d="M96 410 Q170 380 240 410 T384 410 T522 410" fill="none" stroke="#67e8f9" stroke-width="3" opacity=".35"/>
+  <g fill="#0f2940" stroke="#a5f3fc" stroke-width="2">
+    <rect x="132" y="280" width="104" height="62" rx="9"/><rect x="257" y="280" width="104" height="62" rx="9"/><rect x="382" y="280" width="104" height="62" rx="9"/>
+  </g>
+  <g class="chip" text-anchor="middle"><text x="184" y="317">RAW</text><text x="309" y="317">CLEAN</text><text x="434" y="317">CURATED</text></g>
+  <g fill="#cffafe"><circle cx="151" cy="386" r="6"/><circle cx="174" cy="386" r="6"/><circle cx="197" cy="386" r="6"/><circle cx="276" cy="386" r="6"/><circle cx="299" cy="386" r="6"/><circle cx="322" cy="386" r="6"/><circle cx="401" cy="386" r="6"/><circle cx="424" cy="386" r="6"/><circle cx="447" cy="386" r="6"/></g>
+  <text x="309" y="454" class="small" text-anchor="middle">Catalog • ownership • quality checks</text>
+
+  <path d="M578 345 H842" fill="none" stroke="#7dd3fc" stroke-width="5" marker-end="url(#arrow)"/>
+  <text x="710" y="305" class="label" text-anchor="middle">UNMANAGED</text>
+  <text x="710" y="330" class="label" text-anchor="middle">GROWTH</text>
+  <g>
+    <rect x="592" y="380" width="116" height="42" rx="21" fill="#7c2d12"/><text x="650" y="406" class="chip" text-anchor="middle">No owners</text>
+    <rect x="718" y="380" width="124" height="42" rx="21" fill="#854d0e"/><text x="780" y="406" class="chip" text-anchor="middle">No metadata</text>
+    <rect x="592" y="432" width="116" height="42" rx="21" fill="#854d0e"/><text x="650" y="458" class="chip" text-anchor="middle">Duplicates</text>
+    <rect x="718" y="432" width="124" height="42" rx="21" fill="#7c2d12"/><text x="780" y="458" class="chip" text-anchor="middle">No quality</text>
+  </g>
+
+  <rect x="886" y="150" width="490" height="390" rx="22" fill="#1c302d" stroke="#a3e635" stroke-width="2"/>
+  <text x="918" y="193" class="label">DATA SWAMP</text>
+  <text x="918" y="220" class="small">Hard to find • understand • trust • use</text>
+  <rect x="918" y="254" width="426" height="242" rx="18" fill="url(#swamp)"/>
+  <path d="M918 315 Q990 285 1060 315 T1204 315 T1344 315" fill="none" stroke="#a3e635" stroke-width="3" opacity=".35"/>
+  <path d="M918 410 Q990 380 1060 410 T1204 410 T1344 410" fill="none" stroke="#a3e635" stroke-width="3" opacity=".25"/>
+  <g fill="#31433a" stroke="#bef264" stroke-width="2">
+    <rect x="952" y="282" width="112" height="62" rx="8" transform="rotate(-5 1008 313)"/>
+    <rect x="1082" y="292" width="112" height="62" rx="8" transform="rotate(7 1138 323)"/>
+    <rect x="1210" y="277" width="104" height="62" rx="8" transform="rotate(-9 1262 308)"/>
+    <rect x="980" y="370" width="112" height="62" rx="8" transform="rotate(6 1036 401)"/>
+    <rect x="1122" y="376" width="112" height="62" rx="8" transform="rotate(-8 1178 407)"/>
+  </g>
+  <g stroke="#d9f99d" stroke-width="3" opacity=".8"><path d="M970 302 l68 0 M970 316 l45 0 M1100 312 l68 0 M1100 326 l55 0 M1230 299 l58 0 M1230 313 l38 0 M998 390 l65 0 M998 404 l46 0 M1140 397 l65 0 M1140 411 l42 0"/></g>
+  <g fill="#a3e635" opacity=".8"><path d="M1035 460 q18 -28 36 0 q-18 -7 -36 0"/><path d="M1252 458 q18 -28 36 0 q-18 -7 -36 0"/><path d="M1080 350 q14 -22 28 0 q-14 -5 -28 0"/></g>
+  <text x="1131" y="474" class="small" text-anchor="middle">Unclear meaning • uncertain quality</text>
+  <text x="720" y="585" class="muted" text-anchor="middle">Storage is only the foundation. Trust comes from metadata, quality, lineage, ownership, and governance.</text>
+</svg>
