@@ -1,8 +1,8 @@
 # Data & AI Engineering Topics
 
-**A growing collection of practical notes, visual explanations, and project-oriented resources covering Data Engineering, Data Science, Machine Learning, and MLOps.**
+**A growing collection of practical notes, visual explanations, and project-oriented resources covering Data Engineering, Data Science, Machine Learning, MLOps, and AIOps.**
 
-The goal is to connect the full lifecycle: building reliable data pipelines, preparing useful features, developing machine-learning models, and operating AI systems responsibly in production.
+The goal is to connect the full lifecycle: building reliable data pipelines, preparing useful features, developing machine-learning models, and operating AI-enabled systems responsibly.
 
 ## Explore the topics
 
@@ -42,10 +42,19 @@ Practical concerns that arise when models move from experiments into real system
 
 Start with the detailed guide: **[Train–Serving Mismatch: guide, checklist, and diagrams](./topics/train-serving-mismatch/README.md)**.
 
+### 4. AIOps — Artificial Intelligence for IT Operations
+
+Applying AI, machine learning, and analytics to operational data to support monitoring, incident investigation, and IT service reliability.
+
+- **[AIOps](./topics/aiops/README.md)** — an introductory guide covering telemetry sources, anomaly detection, event correlation, root cause analysis support, architecture, use cases, challenges, and related technologies.
+
+Start with the guide: **[AIOps — concepts, architecture, examples, and good practices](./topics/aiops/README.md)**.
+
 ## Featured resources
 
 - [Data Swamp guide](./topics/data-swamp/README.md) — causes, consequences, prevention practices, and a data lake health checklist.
-- [Train–Serving Mismatch carousel PDF](./Train_Serving_Mismatch_Checklist_Corrected.pdf) — a visual guide with a checklist and diagrams.
+- [Train–Serving Mismatch guide](./topics/train-serving-mismatch/README.md) — concepts, validation checklist, and diagrams.
+- [AIOps guide](./topics/aiops/README.md) — an introduction to AI-driven IT operations.
 
 The SVG diagrams in `assets/` are original explanatory illustrations used by the topic guides.
 
@@ -63,6 +72,8 @@ The SVG diagrams in `assets/` are original explanatory illustrations used by the
 │   ├── train-serving-flow.svg
 │   └── validation-layers.svg
 └── topics/
+    ├── aiops/
+    │   └── README.md
     ├── data-swamp/
     │   └── README.md
     └── train-serving-mismatch/
